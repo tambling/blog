@@ -1,0 +1,43 @@
+body:global(.modalOpen) {
+  height: 100vh;
+  overflow: auto;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.pageHeader {
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+main {
+  margin-left: 220px;
+  padding: 50px;
+}
+
+article {
+  margin-bottom: 50px;
+}
+
+article:after {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  content: "\270C\FE0F"
+}
+
+.buttons p {
+  display: inline;
+}
+
+pre {
+  background-color: #ddd;
+  padding: 20px;
+}
