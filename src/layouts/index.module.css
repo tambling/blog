@@ -17,6 +17,30 @@ body:global(.modalOpen) {
   padding-left: 2rem;
 }
 
+.pageHeader nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pageHeader nav a:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.pageHeader nav ul {
+  margin-bottom: 0;
+}
+
+.pageHeader nav ul li {
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+
+.pageHeader nav ul li:last-child {
+  margin-bottom: 0px;
+}
+
 main {
   margin-left: 220px;
   padding: 50px;
@@ -31,10 +55,6 @@ article:after {
   text-align: center;
   font-size: 2rem;
   content: "\270C\FE0F"
-}
-
-.buttons p {
-  display: inline;
 }
 
 pre {
