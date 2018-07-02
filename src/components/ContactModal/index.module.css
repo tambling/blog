@@ -1,0 +1,18 @@
+.contactMethods {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.contactMethods > * {
+  line-height: 80px;
+  vertical-align: middle;
+  margin: 0px 10px;
+}
+
+.contactMethods a {
+  font-size: 80px;
+}
+
+.contactMethods a:hover {
+  text-decoration: underline;
+}

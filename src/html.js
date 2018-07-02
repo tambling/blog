@@ -1,4 +1,6 @@
 import React from "react"
+import { GoogleFont } from 'react-typography';
+import typography from './utils/typography';
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -29,6 +31,8 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <GoogleFont typography={typography} />
+          <title>tambling dot me</title>
           {this.props.headComponents}
           {css}
         </head>

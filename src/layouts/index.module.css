@@ -17,15 +17,20 @@ body:global(.modalOpen) {
   padding-left: 2rem;
 }
 
-.pageHeader nav a {
+a {
   color: inherit;
   text-decoration: none;
 }
 
-.pageHeader nav a:hover {
+a:hover {
   color: gray;
   cursor: pointer;
 }
+
+li a, p a {
+  text-decoration: underline;
+}
+
 
 .pageHeader nav ul {
   margin-bottom: 0;
@@ -33,8 +38,11 @@ body:global(.modalOpen) {
 
 .pageHeader nav ul li {
   color: inherit;
-  text-decoration: none;
   list-style: none;
+}
+
+.pageHeader nav ul li a {
+  text-decoration: none;
 }
 
 .pageHeader nav ul li:last-child {

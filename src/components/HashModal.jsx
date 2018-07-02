@@ -4,15 +4,19 @@ import Modal from 'react-modal'
 Modal.setAppElement('#___gatsby')
 
 const processWindowHash = () => {
-  const [hash] = window.location.hash.match(/\w+/) || [];
-  return hash;
+  if (typeof window !== 'undefined') {
+    const [hash] = window.location.hash.match(/\w+/) || [];
+    return hash;
+  }
+
+  return null;
 };
 
 const HashModal = ({path, children, component}) => {
   return (
     <Modal 
       isOpen={path === processWindowHash()}
-      onRequestClose={() => window.history.back()}
+      onRequestClose={() => window.location.hash = ''}
       style={{
         overlay: { 
           display: 'flex', 
@@ -21,8 +25,10 @@ const HashModal = ({path, children, component}) => {
         },
         content: {
           position: 'static',
-          height: '60%',
-          width: '40%',
+          width: '30%',
+          maxHeight: '70%',
+          overflow: 'scroll',
+          padding: '35px',
           borderWidth: 2,
           borderRadius: 4,
         },
