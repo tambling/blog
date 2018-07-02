@@ -5,17 +5,20 @@
 .buttons {
   width: 480px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
-.buttons p {
-  display: inline-block;
-  width: 200px;
-  margin: 20px;
+.buttons p, .buttons a {
   font-size: 2rem;
   cursor: pointer;
+  margin: 10px;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
 }
 
-.buttons p .icon {
+.buttons p .icon, .buttons a .icon {
   display: inline-block;
   position: relative;
   top: 6px;
@@ -29,10 +32,18 @@
   font-size: 1rem;
   content: "newer";
   margin-right: 10px;
+  position: absolute;
+  left: -80px;
+  padding-right: 10px;
+  width: 80px;
+  text-align: right;
+  top: 18px;
 }
 
 .olderButton:hover::after {
   font-size: 1rem;
-  content: "that's it!";
+  content: "older";
   margin-left: 10px;
+  position: absolute;
+  top: 18px;
 }
