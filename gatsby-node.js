@@ -3,7 +3,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 
 const pageToPath = (index, maxPages) => {
   if (index === 1) {
-    return '';
+    return '/';
   }
 
   if (index > 1 && index <= maxPages) {
