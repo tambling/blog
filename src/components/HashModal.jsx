@@ -24,8 +24,9 @@ const HashModal = ({path, children, component}) => {
           alignItems: 'center',
         },
         content: {
+          fontSize: '0.9rem',
           position: 'static',
-          width: '30%',
+          width: '35%',
           maxHeight: '70%',
           overflow: 'scroll',
           padding: '35px',

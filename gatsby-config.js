@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'wab',
+    title: 'tambling dot me',
   },
   plugins: [
     {
