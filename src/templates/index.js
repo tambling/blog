@@ -1,12 +1,15 @@
 import React from 'react'
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
+
+import Layout from '../components/Layout';
 
 import styles from './index.module.css';
 
 const pointLeft = String.fromCodePoint(0x1F448)
 const pointRight = String.fromCodePoint(0x1F449)
 
-export default ({ data, pathContext: {group, nextPath, prevPath} }) => (
+export default ({ data, pageContext: {group, nextPath, prevPath} }) => (
+  <Layout>
   <div>
     {
       group.map(({ node }) => (
@@ -39,4 +42,5 @@ export default ({ data, pathContext: {group, nextPath, prevPath} }) => (
       }
     </div>
   </div>
+</Layout>
 );

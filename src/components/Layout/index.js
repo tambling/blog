@@ -1,13 +1,13 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
 import styles from './index.module.css';
 
-import AboutModal from '../components/AboutModal';
-import CurrentlyModal from '../components/CurrentlyModal';
-import ContactModal from '../components/ContactModal';
+import AboutModal from '../AboutModal';
+import CurrentlyModal from '../CurrentlyModal';
+import ContactModal from '../ContactModal';
 
-import HashLink from '../components/HashLink';
+import HashLink from '../HashLink';
 
 export default ({ children }) => (
   <div className={styles.page}>
@@ -23,7 +23,7 @@ export default ({ children }) => (
     </header>
 
     <main>
-      {children()}
+      {children}
     </main>
 
     <AboutModal />

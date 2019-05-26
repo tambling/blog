@@ -14,8 +14,8 @@ const pageToPath = (index, maxPages) => {
 }
 
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
   const allMarkdownQuery = () => graphql(
     `
     {
@@ -95,8 +95,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
 };
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const [slug] = createFilePath({ node, getNode, basePath: `pages` })
       .match(/[^\/]+/)

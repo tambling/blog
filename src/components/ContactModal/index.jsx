@@ -12,7 +12,7 @@ export default () => (
     <span className={styles.contactMethods}>
       <a href="mailto:dean@tambling.me">{envelope}</a>
       <span>or</span>
-      <a href="https://twitter.com/DeanTambling" target="_blank">{bird}</a>
+      <a href="https://twitter.com/DeanTambling" target="_blank" rel="noopener noreferrer">{bird}</a>
     </span>
   </HashModal>
 );

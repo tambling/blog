@@ -1,10 +1,10 @@
 import React from 'react';
-import { navigateTo } from 'gatsby-link';
+import { navigate } from "gatsby"
 
 const HashLink = ({ to, children, history }) => {
-  return (<a onClick={() => navigateTo(`#${to}`)}>
+  return (<button onClick={() => navigate(`#${to}`)}>
     {children}
-  </a>);
+  </button>);
 }
 
 export default HashLink;
