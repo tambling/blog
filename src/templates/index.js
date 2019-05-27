@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby';
 
 import Layout from '../components/Layout';
+import Post from '../components/Post';
 
 import styles from './index.module.css';
 
@@ -13,13 +14,13 @@ export default ({ data, pageContext: {group, nextPath, prevPath} }) => (
   <div>
     {
       group.map(({ node }) => (
-        <article key={node.fields.slug}>
-          <header>
-            <Link to={`/posts/${node.fields.slug}`}><h1>{node.frontmatter.title}</h1></Link>
-            <p className={ styles.date }>{node.frontmatter.date}</p>
-          </header>
-          <section dangerouslySetInnerHTML={{__html: node.html}}/>
-        </article>
+        <Post
+          key={node.fields.slug}
+          link={`/posts/${node.fields.slug}`}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          body={node.html}
+        />
       ))
     }
 

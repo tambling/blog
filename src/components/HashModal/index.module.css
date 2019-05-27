@@ -1,0 +1,22 @@
+.modal {
+  background-color: white;
+  position: static;
+  width: 525px;
+  max-height: 80%;
+  overflow: scroll;
+  padding: 50px;
+  border: 4px solid #666;
+  border-radius: 2px;
+}
+
+.modal h2 {
+  text-align: center;
+}
+
+.modal p {
+  margin-bottom: 1rem;
+}
+
+.modal ul, .modal p:last-child, .modal li:last-child {
+  margin-bottom: 0;
+}

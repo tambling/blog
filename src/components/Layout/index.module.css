@@ -1,20 +1,26 @@
-body:global(.modalOpen) {
-  height: 100vh;
-  overflow: auto;
-}
-
 .page {
   margin: 0 auto;
   max-width: 960px;
 }
 
 .pageHeader {
-  width: 180px;
+  width: 220px;
   height: 100vh;
   position: fixed;
   display: flex;
   align-items: center;
-  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.pageHeader ul {
+  margin-left: 0;
+}
+
+.image {
+  border-radius: 500px;
+  width: 125px;
+  margin-bottom: 1rem;
 }
 
 a, button {

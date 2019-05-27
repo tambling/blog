@@ -13,11 +13,12 @@ export default ({ children }) => (
   <div className={styles.page}>
     <header className={styles.pageHeader}>
       <nav>
-        <Link to="/"><h1>dean tambling</h1></Link>
+        <img src="https://github.com/tambling.png" alt="Dean Tambling, wearing a ballcap that says 'Cats'" className={styles.image} />
+        <h1><Link to="/">dean tambling</Link></h1>
         <ul>
-          <li><HashLink to="about">about</HashLink></li>
-          <li><HashLink to="currently">currently</HashLink></li>
-          <li><HashLink to="contact">contact</HashLink></li>
+          <li><h6><HashLink to="about">about</HashLink></h6></li>
+          <li><h6><HashLink to="currently">currently</HashLink></h6></li>
+          <li><h6><HashLink to="contact">contact</HashLink></h6></li>
         </ul>
       </nav>
     </header>

@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-modal'
 
+import styles from './index.module.css'
+
 Modal.setAppElement('#___gatsby')
 
 const processWindowHash = () => {
@@ -17,21 +19,13 @@ const HashModal = ({path, children, component}) => {
     <Modal 
       isOpen={path === processWindowHash()}
       onRequestClose={() => window.location.hash = ''}
+      shouldFocusAfterRender={false}
+      className={styles.modal}
       style={{
         overlay: { 
           display: 'flex', 
           justifyContent: 'center', 
           alignItems: 'center',
-        },
-        content: {
-          fontSize: '0.9rem',
-          position: 'static',
-          width: '35%',
-          maxHeight: '70%',
-          overflow: 'scroll',
-          padding: '35px',
-          borderWidth: 2,
-          borderRadius: 4,
         },
       }}
     >

@@ -4,7 +4,7 @@ import HashModal from './HashModal';
 export default () => (
   <HashModal path='about'>
     <h2>about</h2>
-    <p>Hi, I'm Dean, a software engineer in San Jose.</p>
+    <p>Hi, I'm Dean, a software engineer in the Bay Area.</p>
     <ul>
       <li>I'm currently liberating data and building friendly interfaces on top of obscure APIs at <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>(!).</li>
       <li>Before that: turned mountains of electronic health records into useful bespoke web applications at <a href="https://www.akidolabs.com/" target="_blank" rel="noopener noreferrer">Akido Labs</a>.</li>
