@@ -1,12 +1,12 @@
 import React from 'react';
 import HashModal from '../HashModal';
 
-import styles from './index.module.css'
+import * as styles from './index.module.css'
 
 const bird = String.fromCodePoint(0x1F426)
 const envelope = String.fromCodePoint(0x2709, 0xFE0F)
 
-export default () => (
+const ContactModal = () => (
   <HashModal path='contact'>
     <h2>contact</h2>
     <span className={styles.contactMethods}>
@@ -17,3 +17,4 @@ export default () => (
   </HashModal>
 );
 
+export default ContactModal;

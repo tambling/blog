@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby';
 
-import Layout from '../components/Layout';
-import Post from '../components/Post';
+import * as styles from './index.module.css';
 
-import styles from './index.module.css';
+import Post from '../components/Post';
+import Layout from '../components/Layout';
 
 const pointLeft = String.fromCodePoint(0x1F448)
 const pointRight = String.fromCodePoint(0x1F449)
 
-export default ({ data, pageContext: {group, nextPath, prevPath} }) => (
+const Index =  ({ data, pageContext: {group, nextPath, prevPath} }) => (
   <Layout>
   <div>
     {
@@ -45,3 +45,5 @@ export default ({ data, pageContext: {group, nextPath, prevPath} }) => (
   </div>
 </Layout>
 );
+
+export default Index;

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby';
 
-import styles from './index.module.css';
+import * as styles from './index.module.css';
 
-export default ({link, title, date, body}) => (
+const Post = ({link, title, date, body}) => (
   <article>
     <header className={styles.postHeader}>
         {link ? 
@@ -16,3 +16,5 @@ export default ({link, title, date, body}) => (
           <section dangerouslySetInnerHTML={{__html: body}}/>
         </article>
 );
+
+export default Post;

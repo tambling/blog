@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import styles from './index.module.css';
+import * as styles from './index.module.css';
 
 import AboutModal from '../AboutModal';
 import CurrentlyModal from '../CurrentlyModal';
@@ -9,7 +9,7 @@ import ContactModal from '../ContactModal';
 
 import HashLink from '../HashLink';
 
-export default ({ children }) => (
+const Layout = ({ children }) => (
   <div className={styles.page}>
     <div className={styles.headerContainer}>
       <header>
@@ -34,3 +34,5 @@ export default ({ children }) => (
     <ContactModal />
   </div>
     );
+
+export default Layout;
