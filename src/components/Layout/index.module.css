@@ -61,9 +61,21 @@ li a, p a {
   margin-bottom: 0px;
 }
 
+.message {
+  width: 500px;
+}
+
+.message h1 {
+  text-align: center;
+}
+
 main {
+  min-height: 100vh;
   margin-left: 220px;
   padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 article {
@@ -87,6 +99,7 @@ pre {
     font-size: 100%;
     min-width: 360px;
   }
+
   .headerContainer {
     width: 100%;
     position: static;
@@ -122,6 +135,12 @@ pre {
   main {
    margin-left: 0; 
    padding: 2rem;
+   align-items: start;
+  }
+
+  .message {
+    width: 80%;
+    max-width: 500px;
   }
 
   h2, h3, h4, h5, h6 {

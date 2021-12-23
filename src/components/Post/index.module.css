@@ -1,11 +1,11 @@
-.postHeader {
+article header {
   text-align: center;
 }
 
-.postHeader h1 {
+article header h1 {
   margin-bottom: 0.45rem;
 }
 
-.date {
+article header h6 {
   font-style: italic;
 }
